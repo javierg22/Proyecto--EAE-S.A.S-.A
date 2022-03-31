@@ -25,11 +25,7 @@ body{
     min-height: 100vh;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: 3;
-    /*grid-template-areas: 
-    "header header header header"
-    "mainaHome mainHome mainHome mainhome"
-    "footer footer footer footer"*/
-    ;
+   
 }
 
 header{ background-color:white;
@@ -120,124 +116,96 @@ flex-direction: row;
     text-decoration: none;
     color: black; 
 }
-
+/* main de la pantalla principal rehecho */
 .mainHome{
-    background-color: rgba(112,173,70,255);
-    /*grid-area: mainHome;*/
     grid-column: 1/5;
     grid-row: 2;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-}
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 0.75fr 0.4fr 1fr 1fr;
+    background-color: rgba(112,173,70,255);
 
+
+    
+}
+.mainHome h2{
+    margin: 3rem 0 3rem 0;
+    font-size: 1.5em;
+    text-align: center;
+}
 
 .imagenHome{
-    /* grid-area: mainHome; */
-    width: 1440px;
-    height: 550px;
-    grid-column: 1/3;
     grid-row: 1;
+    grid-column: 1/3;
+
+
 }
+.imagenHome img{
+    max-width: 100%;
+}
+
 .presentacionEmpresa{
     grid-column: 1/3;
     grid-row: 2;
-}
-.presentacionEmpresa h2{
     text-align: center;
-    color: black;
-margin: 30px;
-}
-.presentacionEmpresa p{
+    margin: 1rem 2rem;
+    font-size: 2em;
 
-text-align: center;
-margin: 60px;
+
 }
-.mainHome section{
-    grid-row: 3;
+
+
+.presentacionServicios{
     grid-column: 1/3;
-    flex-direction: column;
-}
-.presentacionServicios {
-    /* grid-area: presentacionServicios; */
-    
-    position:relative;
-    width: 400px;
-    height: 300px;
-    padding: 20px 20px;
-    margin: 60px;
-    top: 60px;
-
+    grid-row: 3;
+    display: grid;
+    grid-template-areas: "listaServicios imagenServicios" "botonCotizacion imagenServicios";
+    justify-content: space-around;
 }
 
-.mainHome section{
-    width: 1440px;
-    height: 700px;
-    /* display: inline-block; */
-    display: flex;
-    flex-direction: column;
-}
 .listaServicios{
-    position: absolute;
-    width: 400px;
-    height: 300px;
-    top: 200px;
+    
+    grid-area: listaServicios;
+    font-size: 2em;
+    margin: auto;
+
+}
+.presentacionServicios picture{
+    grid-area: imagenServicios;
+
 }
 .botonCotizacion{
-    display: block;
-    top: auto;
+    grid-area: botonCotizacion;
 }
-.imagenServiciosHome{
-    position: relative;
-    width: 450px;
-    height: 600px;
-    left: 650px;
-
-}
+  
 .presentacionNosotros{
-    position: relative;
-    grid-row: 4;
     grid-column: 1/3;
-    width: 1440px;
-height: 700px;
-margin: 0px;
-background-color: rgba(180,2,2,255) ;
-
-
+    grid-row: 4;
+   
 
 }
-.presentacionNosotros ul {
-    width: 1440px;
-    height: 600px;
-    position: relative;
-    list-style: none;
-    display:inline block;
-   
-    }
-   
-    .presentacionNosotros ul li{
-    position: relative;
-    width: 250px;
-    height: 200px;
-    display: inline-block;
-    left: 300px;
-top: 100px;
-font-family:'Times New Roman', Times, serif;
-color: aliceblue;
-    }
+.presentacionNosotros ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.presentacionNosotros li {
+    display: flex;
+    flex-direction: column;
+    justify-content: revert;
+}
+.presentacionNosotros li img{
 
-    
-.presentacionNosotros ul li img{
-position: relative;
-    width: 250px;
-    height: 200px;
-    margin: 10px auto;
-    padding: 20px;
-    
-
-    
+width: 35rem;
+height: 35rem;
+margin: 2rem;
 
 }
+
+
+
+
  footer{
      background-image: url(../EAE\ img/cebollasfondo.jpg);
      background-position: center;
@@ -269,7 +237,7 @@ position: relative;
 
  /* servicios */
 
- main h2 {
+ .mainServicios h2 {
      font-size: larger;
      font-weight: bold;
      text-align: center;
@@ -325,23 +293,40 @@ position: relative;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 1fr;
-
-    
-    
-    
 }
 
 .imagenContacto{
-    width: 700px;
-    height: 400px;
-    grid-column: 1/2;
-grid-row: 1;
+     width: 65rem;
+     height: 45rem;
+     grid-column: 1/2;
+     grid-row: 1;
+     margin-left: 2rem;
+     margin-bottom: 2rem;
+}
+.mainContacto div{
+    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.mainContacto div h2{
+    font-size: 2em;
+    color: rgba(180,2,2,255);
+   margin-bottom: 2rem;
 }
 .formularioContacto{
     grid-column: 2/4;
     grid-row: 1;
    
-   
+}
+input[name="nombre"]{
+    width: 25rem;
 }
 
+input[name="correo"]{
+    width: 25rem;
+}
+input[name="caja-de-mensaje"]{
+    width: 25rem;
+    height: 25rem;
+}
  
