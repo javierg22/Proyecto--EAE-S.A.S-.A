@@ -4,20 +4,21 @@ footer{
     grid-row: 3;
     grid-column: 1/5;
     margin: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
     a{
         position: relative;
-        left: 1120px;
-        margin: 20px
-        ;
+        margin: 2rem;
     }
     h3{
         position:relative;
-        margin: 5px;
+        margin: 2rem;
     }
     p{
-        width: 200px;
-        height: 100px;
-        margin :20px;
+        width: 20em;
+        height: 10em;
+        margin :2rem;
    
     }
   

@@ -47,7 +47,7 @@ header{ background-color:white;
         }
         ul{
             flex-basis: 40%;
-            justify-content: space-between;
+            
             display: flex;
             flex-direction: row;
             
@@ -59,8 +59,8 @@ header{ background-color:white;
                 font-size: medium;
                 position: relative;
                 padding: 1rem 1rem;
-                margin: 3rem 3rem 0rem 1rem;
                 text-align: center;
+            
             }
             li:hover{
                 border: 0.1rem solid rgba(112,173,70,255) ;

@@ -9,12 +9,13 @@
     list-style-type: none; }
   * a {
     text-decoration: none;
+    color: black;
     display: inline-block; }
   * body {
     display: grid;
     min-height: 100vh;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 3; }
+    grid-template-rows: auto 1fr auto; }
 
 header {
   background-color: white;
@@ -54,7 +55,6 @@ header {
       flex-basis: 35%; }
     header nav ul {
       flex-basis: 40%;
-      justify-content: space-between;
       display: flex;
       flex-direction: row; }
       header nav ul li {
@@ -64,7 +64,6 @@ header {
         font-size: medium;
         position: relative;
         padding: 1rem 1rem;
-        margin: 3rem 3rem 0rem 1rem;
         text-align: center; }
       header nav ul li:hover {
         border: 0.1rem solid #70ad46; }
@@ -77,18 +76,20 @@ footer {
   background-position: center;
   grid-row: 3;
   grid-column: 1/5;
-  margin: 0px; }
+  margin: 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around; }
   footer a {
     position: relative;
-    left: 1120px;
-    margin: 20px; }
+    margin: 2rem; }
   footer h3 {
     position: relative;
-    margin: 5px; }
+    margin: 2rem; }
   footer p {
-    width: 200px;
-    height: 100px;
-    margin: 20px; }
+    width: 20em;
+    height: 10em;
+    margin: 2rem; }
 
 .mainHome {
   grid-column: 1/5;
@@ -135,11 +136,10 @@ footer {
       justify-content: space-around; }
       .mainHome .presentacionNosotros ul li {
         display: flex;
-        flex-direction: column;
-        justify-content: revert; }
+        flex-direction: column; }
         .mainHome .presentacionNosotros ul li img {
-          width: 35rem;
-          height: 35rem;
+          width: 25rem;
+          height: 25rem;
           margin: 2rem; }
 
 .mainServicios .imagenServicios {
@@ -182,21 +182,23 @@ footer {
     align-items: center; }
 
 .mainNosotros .imagenNosotros {
-  width: 1440px;
-  height: 600px; }
+  width: 100%; }
+  .mainNosotros .imagenNosotros img {
+    width: 100%; }
 
 .mainNosotros .introduccionEquipo p {
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   padding: 60px; }
 
-.mainNosotros .nuestroEquuipo {
-  display: flex; }
-  .mainNosotros .nuestroEquuipo img {
-    width: 200px;
-    height: 200px;
-    margin: 50px;
-    display: flex; }
+.mainNosotros .carrusel {
+  width: 70rem;
+  height: 60rem;
+  display: flex;
+  justify-content: center; }
+
+.mainNosotros #carouselExampleDark {
+  width: 100%; }
 
 .mainContacto {
   grid-column: 1/5;
@@ -206,12 +208,13 @@ footer {
   justify-content: center;
   align-items: center; }
   .mainContacto .mapaContacto {
-    grid-area: mapa; }
+    grid-area: mapa;
+    display: flex;
+    justify-content: center; }
   .mainContacto .imagenContacto {
     width: 60rem;
     height: 40rem;
     grid-area: imagenContacto;
-    margin-left: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem; }
     .mainContacto .imagenContacto img {

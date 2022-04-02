@@ -8,13 +8,14 @@
 
    .mapaContacto{
      grid-area: mapa;
+     display: flex;
+     justify-content: center;
    }
 
    .imagenContacto{
       width: 60rem;
       height: 40rem;
       grid-area: imagenContacto;
-      margin-left: 2rem;
       margin-bottom: 2rem;
      margin-top: 2rem;
         img{
