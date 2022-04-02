@@ -1,0 +1,52 @@
+.mainContacto{
+    grid-column: 1/5;
+    grid-row: 2;
+    display: grid;
+    grid-template-areas: "mapa mapa""formulario imagenContacto";
+    justify-content: center;
+    align-items: center;
+
+   .mapaContacto{
+     grid-area: mapa;
+   }
+
+   .imagenContacto{
+      width: 60rem;
+      height: 40rem;
+      grid-area: imagenContacto;
+      margin-left: 2rem;
+      margin-bottom: 2rem;
+     margin-top: 2rem;
+        img{
+          width: 80%;
+       }
+    }
+    .formulario{
+        h2{
+          font-size: 2em;
+          color: rgba(180,2,2,255);
+          margin-bottom: 2rem;
+          margin-top: 2rem;
+        }
+   
+       .formularioContacto{
+           grid-area: formulario;
+           display: flex;
+           flex-direction: column;
+          gap: 1rem;
+
+          input[name="nombre"]{
+              width: 25rem;
+            }
+        
+          input[name="correo"]{
+              width: 25rem;
+            }
+          input[name="caja-de-mensaje"]{
+              width: 25rem;
+              height: 25rem;
+            }
+         
+        }
+    }
+}

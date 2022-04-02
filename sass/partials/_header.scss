@@ -1,0 +1,77 @@
+
+header{ background-color:white;
+    /*grid-area: header;*/
+    grid-column: 1/5;
+    grid-row: 1;
+    min-height: 15vh;
+    max-width: 1080px;
+    margin: 0 auto;
+    .nombreLema{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    h1{
+        font-weight: bold;
+        font-size:x-large;
+        position: relative;
+        width: 21em;
+        height: 4rem;
+        margin: 0.2rem;
+    
+       
+        }  
+        h2{
+            font-weight: bold;
+            font-size: medium;
+            
+            position: relative;
+            width: 21em;
+            height: 4rem;
+            margin: 0.2rem;
+        
+              }
+        
+    
+    nav{
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        padding:0 2rem;
+       
+        picture{
+            flex-basis: 35%;
+        }
+        ul{
+            flex-basis: 40%;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+            
+              
+              li{
+                display: flex;
+                flex-direction: row;
+                border: 0.1rem solid white;
+                font-size: medium;
+                position: relative;
+                padding: 1rem 1rem;
+                margin: 3rem 3rem 0rem 1rem;
+                text-align: center;
+            }
+            li:hover{
+                border: 0.1rem solid rgba(112,173,70,255) ;
+                a{
+ 
+                    text-decoration: none;
+                    color: black; 
+                }
+            }
+          
+        }
+       
+    }
+}

@@ -1,0 +1,29 @@
+.mainNosotros{
+    .imagenNosotros{
+        width: 1440px;
+        height: 600px;
+    }
+    .introduccionEquipo{
+        p{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 60px;
+       
+        }
+    }
+    .nuestroEquuipo{
+        display: flex;
+       
+        img{
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+            display: flex;
+        }
+   
+   
+    }  
+
+    
+
+}
