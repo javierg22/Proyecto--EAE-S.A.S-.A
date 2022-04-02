@@ -1,0 +1,24 @@
+{
+  "name": "proyecto-eae-s.a.s",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-saas": "node-sass --include-path scss sass/index.scss css/main.css"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javierg22/Proyecto--EAE-S.A.S-.A.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javierg22/Proyecto--EAE-S.A.S-.A/issues"
+  },
+  "homepage": "https://github.com/javierg22/Proyecto--EAE-S.A.S-.A#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

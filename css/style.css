@@ -60,7 +60,7 @@ header nav{
 }
 
 
-h1{
+header h1{
     font-weight: bold;
     font-size:x-large;
     position: relative;
@@ -81,19 +81,19 @@ h1{
 
       }
 
-
-  nav picture{
-      flex-basis: 35%;
-  }
-  
-
-  header nav ul{
-flex-basis: 40%;
-justify-content: space-between;
-display: flex;
-flex-direction: row;
-
-  }
+      
+      header nav picture{
+          flex-basis: 35%;
+        }
+        
+        header nav ul{
+      flex-basis: 40%;
+      justify-content: space-between;
+      display: flex;
+      flex-direction: row;
+      
+        }
+        
   header nav ul li{
       display: flex;
       flex-direction: row;
