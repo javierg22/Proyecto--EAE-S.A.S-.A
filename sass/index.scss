@@ -1,9 +1,12 @@
-@import "../sass/misc/normalize";
-@import "../sass/partials/header";
-@import "../sass/partials/footer";
-@import "../sass/views/index";
-@import "../sass/views/servicios";
-@import "../sass/views/nosotros";
-@import "../sass/views/contacto";
+@import "./misc/normalize";
+@import "./misc/mixins";
+@import "./misc/variables";
+@import "./partials/header";
+@import "./views/index";
+@import "./views/servicios";
+@import "./views/nosotros";
+@import "./views/galeria";
+@import "./views/contacto";
+@import "./partials/footer";
 
 

@@ -1,31 +1,48 @@
 .mainNosotros{
-    .imagenNosotros{
-        width: 100%;
-        img{
-            width: 100%;
-        }
+    grid-column: 1/5;
+    grid-row: 2;
+    display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 0.5fr 0.4fr 1fr;
+   .imagenNosotros{
+       grid-row: 1;
+       img{
+            max-width: 100%;
         
-    }
+        }
+       
+   }
     .introduccionEquipo{
+        grid-row: 2;
         p{
             text-align: center;
             font-family: 'Times New Roman', Times, serif;
-            padding: 60px;
+            padding: 6em;
        
         }
         
     }
-   .carrusel{
-    width: 70rem;
-    height: 60rem;
-    display: flex;
-    justify-content: center;}
-    
     #carouselExampleDark{
-        width: 100%;
+        grid-row:3;
+        width: 60rem;
+        height: 40rem;
+        margin: 10rem auto ;
+        
+        
+        
+       
+        .carousel-item img{
+            width: 60rem;
+            height: 40rem;
+        }
+        .carousel-inner img{
+            width: 60rem;
+            height: 40rem;
 
+        }
+        .carousel-caption {
+            color: white;
+           }
 
+    }
 }
-
-}  
-   

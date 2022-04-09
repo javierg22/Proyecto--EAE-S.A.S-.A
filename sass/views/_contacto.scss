@@ -13,14 +13,13 @@
    }
 
    .imagenContacto{
-      width: 60rem;
-      height: 40rem;
-      grid-area: imagenContacto;
-      margin-bottom: 2rem;
-     margin-top: 2rem;
+    width: 32rem;
+    height: 40rem;
+    grid-area: imagenContacto;
+    margin: 2rem 4rem;
         
      img{
-          width: 50%;
+          width: 100%;
        }
     }
     .formulario{

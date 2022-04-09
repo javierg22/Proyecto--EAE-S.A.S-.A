@@ -5,12 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EAE S.A.S</title>
-  
-
-   
-
-<link rel="stylesheet" href="./css/main.css">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body >
     <header>
@@ -30,7 +27,8 @@
                 <li><a href="./index.html">Home </a></li>
                 <li><a href ="./servicios.html">Servicios</a></li>
                 <li><a href ="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto </a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -39,7 +37,7 @@
         <picture class="imagenHome">
             <img src="./EAE_img/cosechadora.jpg" alt="fondocosechadora">
         </picture>   
-     <article class="presentacionEmpresa">
+     <article class="presentacionEmpresa" >
         <h2>EAE SAS
         Soluciones Globales</h2>
         <p>
@@ -47,8 +45,9 @@
         </p>
      </article>
      <article class="presentacionServicios">
-    <h2>¿Que es lo que hacemos?...</h2>
-    <articule class="tramitesHome" >
+    <h2 >¿Que es lo que hacemos?...</h2>
+    <articule class="tramitesHome" data-aos="flip-left"data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
         <article>
             <h3>Tramites ante Autoridades Nacionales ICA, ANLA y NS</h3>
             <p>Acompañamos su compañía desde la formación y registro de marca, en adelante.</p>
@@ -57,7 +56,8 @@
             <img src="./EAE_img/tramite.jpg" alt="">
         </picture>
     </articule>
-    <articule class="consultoriaHome" >
+    <articule class="consultoriaHome" data-aos="flip-right"data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
         <div >
             <h3>Consultoria Agricola</h3>
             <p>Desarrollamos investigación de mercados en todos los sectores de la economía, nacionales o internacionales. Para ello utilizamos diferentes metodologías que garanticen la obtención de conocimientos requeridos por nuestros clientes.</p>
@@ -66,7 +66,8 @@
             <img src="./EAE_img/agronomo_campo3.jpeg" alt="">
         </picture>
     </articule>
-    <articule class="registroHome" >
+    <articule class="registroHome" data-aos="flip-left"data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
         <div >
             <h3>Registro de productos Agricolas</h3>
             <p>Apoyamos su compañía en el registro de sus marcas, enseñas, logos, propiedad industria, propiedad intelectual ante la superintendencia de Industria y Comercio.</p>
@@ -75,7 +76,8 @@
             <img src="./EAE_img/agronomo_campo4.jpeg" alt="">
         </picture>
     </articule>
-    <articule class="capacitacionesHome" >
+    <articule class="capacitacionesHome" data-aos="flip-right"data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
         <div >
             <h3>Capacitaciones </h3>
             <p>Programas de capacitación en diversos temas relacionados con Marketing, Marketing estratégico, habilidades gerenciales, emprendimiento, ventas, equipos comerciales, atención al cliente, etc.</p>
@@ -84,7 +86,8 @@
             <img src="./EAE_img/capacitaciones2.jpeg" alt="">
         </picture>
     </articule>
-    <articule class="otrosHome" >
+    <articule class="otrosHome" data-aos="flip-left"data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
         <div>
             <h3>Otros Servicios</h3>
             <p>Definimos en conjunto con la compañía las mejores prácticas que deberían ser usadas de cara a sus clientes y capacitamos el personal para que entreguen un servicio 5 estrellas siempre.</p>
@@ -95,18 +98,50 @@
     </articule>
     
    
-    <a href="./contacto.html"><input type="button" value="solicita cotizacion" class="botonCotizacion" ></a>
+    <a href="./contacto.html"><input type="button" value="solicita cotizacion" class="botonCotizacion" data-aos="fade-down-left" data-aos-duration="2000"></a>
      </article> 
-     <article class="presentacionNosotros">
-    <h2>Nuestro Equipo</h2>
-    <ul>
-        <li><img src="./EAE_img/DoraVega.jpg" alt="agronomos" class="DoraVega">   Ingniera Quimica Dora Vega </li>
-        <li><img src="./EAE_img/GabrielGarces.jpg" alt="agronomos"class="GabrielGarces">   Ingeniero Agronomo Gabriel Garces</li>
-        <li><img src="./EAE_img/RafaelPuentes.png" alt="agronomos"class="RafaelPuentes">  Ingeniero Agronomo Rafael Puentes</li>
-    </ul>
+
+     <article class="clientes">
+    <h2>Algunos de nuestros Clientes</h2>
+    <div class="logoClientes">
+   <picture>
+       <img src="./EAE_img/e.a.e_clientes/agoroandes_logo.jpg" alt="">
+   </picture>
+   <picture>
+       <img src="./EAE_img/e.a.e_clientes/agrovelca.jpeg" alt="">
+   </picture>
+   <picture>
+       <img src="./EAE_img/e.a.e_clientes/corteva.png" alt="">
+   </picture>
+   <picture>
+       <img src="./EAE_img/e.a.e_clientes/fmc_logo.png" alt="">
+   </picture>
+   <picture>
+       <img src="./EAE_img/e.a.e_clientes/fragaria_logo.jpg" alt="">
+   </picture>
+   <picture>
+       <img src="./EAE_img/e.a.e_clientes/laserna_logo.png" alt="">
+   </picture>
+   <picture>
+       <img src="./EAE_img/e.a.e_clientes/logo-biototal.jpg" alt="">
+   </picture>
+   <picture>
+       <img src="./EAE_img/e.a.e_clientes/logo-lapisa.jpeg" alt="">
+   </picture>
+   <picture>
+       <img src="./EAE_img/e.a.e_clientes/logo-tecnoquimicas.jpg" alt="">
+   </picture>
+   <picture>
+       <img src="./EAE_img/e.a.e_clientes/logo_messis.jpeg" alt="">
+   </picture>
+   <picture>
+    <img src="./EAE_img/e.a.e_clientes/logo_tradecorp.jpg" alt="">
+</picture>
+<picture>
+    <img src="./EAE_img/e.a.e_clientes/logoPolaquimia_ing.jpg" alt="">
+</picture>
+</div>
      </article>
-
-
     </main>
 
 <footer>
@@ -122,8 +157,10 @@
          <h3> Hecho por Carlos Javier Gonzalez</h3>
     </article>
 </footer>
-<!-- JavaScript Bundle with Popper -->
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
