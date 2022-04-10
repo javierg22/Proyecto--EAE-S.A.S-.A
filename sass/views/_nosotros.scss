@@ -4,6 +4,7 @@
     display: grid;
    grid-template-columns: 1fr;
    grid-template-rows: 0.5fr 0.4fr 1fr;
+   background-color: $terciario;
    .imagenNosotros{
        grid-row: 1;
        img{
@@ -24,21 +25,18 @@
     }
     #carouselExampleDark{
         grid-row:3;
-        width: 60rem;
-        height: 40rem;
+        @include size(40rem,60rem);
+       
         margin: 10rem auto ;
         
         
         
        
         .carousel-item img{
-            width: 60rem;
-            height: 40rem;
+            @include size(40rem,60rem);
         }
         .carousel-inner img{
-            width: 60rem;
-            height: 40rem;
-
+            @include size(40rem,60rem);
         }
         .carousel-caption {
             color: white;

@@ -3,8 +3,28 @@ $color_titulos:rgba(180,2,2,255);
 $parrafos: 2em;
 
 // paleta de colores
+
 $principal:#70AD46;
 $secundario:#81986E;
 $terciario:#F4FCED;
 $cuaternario:#F6EDD9;
+
+
+$proporcion:(
+    titulos:3em,
+    subtitutulos:2.5em,
+    parrafos:2em,
+    subparrafo:1.8em
+
+);
+
+@each $var,$value in $proporcion {
+    .escala-#{$var}{
+        font-size: #{$value};
+    }
+
+    
+}
+
+    
 

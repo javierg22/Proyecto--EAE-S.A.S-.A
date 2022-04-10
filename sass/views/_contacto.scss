@@ -5,16 +5,16 @@
     grid-template-areas: "mapa mapa""formulario imagenContacto";
     justify-content: center;
     align-items: center;
+    background-color: $terciario;
 
    .mapaContacto{
      grid-area: mapa;
-     display: flex;
-     justify-content: center;
+     @include flex(row,flex-stard,center);
    }
 
    .imagenContacto{
-    width: 32rem;
-    height: 40rem;
+     @include size(40rem,32rem);
+   
     grid-area: imagenContacto;
     margin: 2rem 4rem;
         
@@ -32,9 +32,8 @@
    
        .formularioContacto{
            grid-area: formulario;
-           display: flex;
-           flex-direction: column;
-          gap: 1rem;
+           @include flex(column,flex-stard,center,1rem);
+        
 
           input[name="nombre"]{
               width: 25rem;
@@ -44,8 +43,8 @@
               width: 25rem;
             }
           input[name="caja-de-mensaje"]{
-              width: 25rem;
-              height: 25rem;
+            @include size(20rem,25rem);
+              
             }
          
         }
