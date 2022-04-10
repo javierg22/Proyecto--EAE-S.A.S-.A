@@ -13,12 +13,19 @@
         position: relative;
         @include flex (column,space-between);
         margin: 2rem 3rem auto;
+       
+        h3{
+             font-size: $subtitulos;
+            color: $color_titulos
+            }
         
        
         h2 {
-            font-size: larger;
+            font-size: $titulos;
             font-weight: bold;
             text-align: center;
+            color: $color_titulos
+
              }
         
          picture{
@@ -35,10 +42,7 @@
              @include flex(row,center,center);
             
             
-            h3{
-                font-weight: bold;
-                font-size: medium;
-                }
+           
            
              }
 

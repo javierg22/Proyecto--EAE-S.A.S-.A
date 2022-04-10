@@ -208,14 +208,14 @@ header {
       justify-content: center;
       align-content: flex-start;
       gap: 0; }
-      .mainHome .clientes h2 .logoClientes {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 1fr 1fr; }
-        .mainHome .clientes h2 .logoClientes picture img {
-          height: 7.5rem;
-          width: 10.5rem;
-          margin: 2rem; }
+    .mainHome .clientes .logoClientes {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: 1fr 1fr; }
+      .mainHome .clientes .logoClientes picture img {
+        height: 7.5rem;
+        width: 10.5rem;
+        margin: 2rem; }
 
 .mainServicios {
   grid-column: 1/5;
@@ -232,10 +232,14 @@ header {
     align-content: flex-start;
     gap: 0;
     margin: 2rem 3rem auto; }
+    .mainServicios #Servicios h3 {
+      font-size: 2.5em;
+      color: #b40202; }
     .mainServicios #Servicios h2 {
-      font-size: larger;
+      font-size: 3em;
       font-weight: bold;
-      text-align: center; }
+      text-align: center;
+      color: #b40202; }
     .mainServicios #Servicios picture {
       height: 20em;
       width: 30em; }
@@ -247,9 +251,6 @@ header {
       justify-content: center;
       align-content: center;
       gap: 0; }
-      .mainServicios #Servicios .servicioTramites h3 {
-        font-weight: bold;
-        font-size: medium; }
     .mainServicios #Servicios .servicioConsultorias {
       display: flex;
       flex-direction: row-reverse;
