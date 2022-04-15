@@ -41,7 +41,7 @@
     #carouselExampleDark{
         grid-row:3;
         grid-column: 1;
-        @include size(40rem,100%);
+        @include size(40rem,80%);
         margin: 10rem auto ;
         
         

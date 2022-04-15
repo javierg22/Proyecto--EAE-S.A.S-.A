@@ -15,10 +15,11 @@
    .mapaContacto{
      .mapaGrande{
      margin: 3rem auto;
+     }
      .mapaChico{
        display: none;
      }
-    }
+    
  }
   .contenedorFormulario{
     @include flex(row-reverse,center,center,3rem);

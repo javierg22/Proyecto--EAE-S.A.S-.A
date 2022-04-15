@@ -14,13 +14,13 @@
     }
     #carouselExampleFade{
         @include flex(row,center,center);
-        @include size(40rem,100%);
+        @include size(40rem,80%);
         margin: 10rem auto ;
         
         
        
         .carousel-item img,.carousel-inner img{
-            @include size(40rem,100%);
+            @include size(40rem,80%);
            
         }
 

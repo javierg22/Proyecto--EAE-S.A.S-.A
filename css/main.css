@@ -333,7 +333,7 @@ header {
     grid-row: 3;
     grid-column: 1;
     height: 40rem;
-    width: 100%;
+    width: 80%;
     margin: 10rem auto; }
     .mainNosotros #carouselExampleDark .carousel-item img {
       height: 40rem;
@@ -366,11 +366,11 @@ header {
     align-content: center;
     gap: 0;
     height: 40rem;
-    width: 100%;
+    width: 80%;
     margin: 10rem auto; }
     .mainGaleria #carouselExampleFade .carousel-item img, .mainGaleria #carouselExampleFade .carousel-inner img {
       height: 40rem;
-      width: 100%; }
+      width: 80%; }
 
 .mainContacto {
   grid-column: 1/5;
@@ -386,8 +386,8 @@ header {
     font-size: 2.5em; }
   .mainContacto .mapaContacto .mapaGrande {
     margin: 3rem auto; }
-    .mainContacto .mapaContacto .mapaGrande .mapaChico {
-      display: none; }
+  .mainContacto .mapaContacto .mapaChico {
+    display: none; }
   .mainContacto .contenedorFormulario {
     display: flex;
     flex-direction: row-reverse;
@@ -477,8 +477,24 @@ footer {
       width: 30rem; } }
 
 @media screen and (max-width: 600px) {
+  #carouselExampleFade {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 0;
+    height: 40rem;
+    width: 100%;
+    margin: 10rem auto; }
+    #carouselExampleFade .carousel-item img, #carouselExampleFade .carousel-inner img {
+      height: 40rem;
+      width: 100%; } }
+
+@media screen and (max-width: 600px) {
   .mainContacto .mapaContacto .mapaGrande {
-    display: none;
+    display: none; }
+  .mainContacto .mapaContacto .mapaChico {
+    display: flex;
     margin: 3rem auto; }
   .mainContacto .contenedorFormulario {
     display: flex;
