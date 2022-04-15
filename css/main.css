@@ -16,6 +16,12 @@
     min-height: 100vh;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto 1fr auto; }
+  @media screen and (max-width: 320px) {
+    * nav {
+      flex-direction: column; } }
+  @media screen and (max-width: 600px) {
+    * nav {
+      flex-direction: column; } }
 
 .escala-titulos {
   font-size: 3em; }
@@ -35,7 +41,7 @@ header {
   grid-column: 1/5;
   grid-row: 1;
   min-height: 15vh;
-  max-width: 1080px;
+  max-width: 100%;
   margin: 0 auto; }
   header .nombreLema {
     display: flex;
@@ -46,14 +52,14 @@ header {
     font-size: x-large;
     position: relative;
     width: 21em;
-    height: 4rem;
+    height: 2em;
     margin: 0.2rem; }
   header h2 {
     font-weight: bold;
     font-size: medium;
     position: relative;
     width: 21em;
-    height: 4rem;
+    height: 3em;
     margin: 0.2rem; }
   header nav {
     background-color: white;
@@ -93,13 +99,23 @@ header {
   .mainHome h2 {
     margin: 3rem 0 3rem 0;
     text-align: center;
-    font-size: 3em;
+    font-size: 2.5em;
     color: #b40202; }
   .mainHome .imagenHome {
     grid-row: 1;
-    grid-column: 1/3; }
-    .mainHome .imagenHome img {
-      max-width: 100%; }
+    grid-column: 1/3;
+    background-image: url(../EAE_img/equipo_campo1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 30rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center; }
+    .mainHome .imagenHome p {
+      color: white;
+      font-size: 2em;
+      text-align: center; }
   .mainHome .presentacionEmpresa {
     grid-column: 1/3;
     grid-row: 2;
@@ -117,7 +133,8 @@ header {
       grid-row: 1;
       grid-column: 1/3;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      font-size: 3em; }
     .mainHome .presentacionServicios .tramitesHome {
       grid-row: 2;
       grid-column: 1/2;
@@ -195,7 +212,10 @@ header {
           width: 90%; }
     .mainHome .presentacionServicios .botonCotizacion {
       grid-row: 4;
-      grid-column: 2/3; }
+      grid-column: 2/3;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
   .mainHome .clientes {
     grid-column: 1/3;
     grid-row: 4;
@@ -220,55 +240,62 @@ header {
 .mainServicios {
   grid-column: 1/5;
   grid-row: 2;
-  background-color: #F4FCED; }
-  .mainServicios .imagenServicios {
-    height: 500;
-    width: 1440px; }
-  .mainServicios #Servicios {
-    position: relative;
+  background-color: #F4FCED;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-start;
+  gap: 0; }
+  .mainServicios h2 {
+    height: 30rem;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    color: #b40202;
+    background-image: url(../EAE_img/cultivo_rosas_blancas.jpeg);
+    background-position: center;
+    background-repeat: no-repeat; }
+  .mainServicios h3 {
+    font-size: 2.5em;
+    color: #b40202; }
+  .mainServicios picture {
+    height: 20em;
+    width: 30em; }
+    .mainServicios picture img {
+      width: 90%; }
+  .mainServicios .servicioTramites {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
     gap: 0;
     margin: 2rem 3rem auto; }
-    .mainServicios #Servicios h3 {
-      font-size: 2.5em;
-      color: #b40202; }
-    .mainServicios #Servicios h2 {
-      font-size: 3em;
-      font-weight: bold;
-      text-align: center;
-      color: #b40202; }
-    .mainServicios #Servicios picture {
-      height: 20em;
-      width: 30em; }
-      .mainServicios #Servicios picture img {
-        width: 90%; }
-    .mainServicios #Servicios .servicioTramites {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-content: center;
-      gap: 0; }
-    .mainServicios #Servicios .servicioConsultorias {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: flex-stard;
-      align-content: center;
-      gap: 0; }
-    .mainServicios #Servicios .servicioCapacitaciones {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-stard;
-      align-content: center;
-      gap: 0; }
-    .mainServicios #Servicios .otrosServicios {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: flex-stard;
-      align-content: center;
-      gap: 0; }
+  .mainServicios .servicioConsultorias {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-stard;
+    align-content: center;
+    gap: 0;
+    margin: 2rem 3rem auto; }
+  .mainServicios .servicioCapacitaciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-stard;
+    align-content: center;
+    gap: 0;
+    margin: 2rem 3rem auto; }
+  .mainServicios .otrosServicios {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-stard;
+    align-content: center;
+    gap: 0;
+    margin: 2rem 3rem auto; }
 
 .mainNosotros {
   grid-column: 1/5;
@@ -278,19 +305,35 @@ header {
   grid-template-rows: 0.5fr 0.4fr 1fr;
   background-color: #F4FCED; }
   .mainNosotros .imagenNosotros {
-    grid-row: 1; }
-    .mainNosotros .imagenNosotros img {
-      max-width: 100%; }
+    grid-row: 1;
+    grid-column: 1;
+    background-image: url(../EAE_img/cultivo_rosas.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 30rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center; }
+    .mainNosotros .imagenNosotros h2 {
+      font-size: 3em;
+      color: #b40202;
+      text-align: center; }
   .mainNosotros .introduccionEquipo {
-    grid-row: 2; }
+    grid-row: 2;
+    grid-column: 1; }
     .mainNosotros .introduccionEquipo p {
       text-align: center;
       font-family: 'Times New Roman', Times, serif;
-      padding: 6em; }
+      margin: 3rem auto;
+      font-size: 2em;
+      height: 20rem;
+      width: 100%; }
   .mainNosotros #carouselExampleDark {
     grid-row: 3;
+    grid-column: 1;
     height: 40rem;
-    width: 60rem;
+    width: 100%;
     margin: 10rem auto; }
     .mainNosotros #carouselExampleDark .carousel-item img {
       height: 40rem;
@@ -307,68 +350,73 @@ header {
   grid-column: 1/5;
   grid-row: 2;
   background-color: #F4FCED; }
-  .mainGaleria h1 {
+  .mainGaleria h2 {
     font-size: 3em;
     color: #b40202;
     display: flex;
     flex-direction: row;
-    justify-content: flex-stard;
+    justify-content: center;
     align-content: center;
-    gap: 0; }
+    gap: 0;
+    margin: 3rem auto; }
   .mainGaleria #carouselExampleFade {
-    height: 40rem;
-    width: 60rem;
-    margin: 10rem auto;
     display: flex;
     flex-direction: row;
-    justify-content: flex-stard;
+    justify-content: center;
     align-content: center;
-    gap: 0; }
-    .mainGaleria #carouselExampleFade .carousel-item img {
+    gap: 0;
+    height: 40rem;
+    width: 100%;
+    margin: 10rem auto; }
+    .mainGaleria #carouselExampleFade .carousel-item img, .mainGaleria #carouselExampleFade .carousel-inner img {
       height: 40rem;
-      width: 60rem; }
+      width: 100%; }
 
 .mainContacto {
   grid-column: 1/5;
   grid-row: 2;
-  display: grid;
-  grid-template-areas: "mapa mapa" "formulario imagenContacto";
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #F4FCED; }
-  .mainContacto .mapaContacto {
-    grid-area: mapa;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-stard;
-    align-content: center;
-    gap: 0; }
-  .mainContacto .imagenContacto {
-    height: 40rem;
-    width: 32rem;
-    grid-area: imagenContacto;
-    margin: 2rem 4rem; }
-    .mainContacto .imagenContacto img {
-      width: 100%; }
-  .mainContacto .formulario h2 {
-    font-size: 2em;
+  .mainContacto h2 {
+    display: inline;
     color: #b40202;
-    margin-bottom: 2rem;
-    margin-top: 2rem; }
-  .mainContacto .formulario .formularioContacto {
-    grid-area: formulario;
+    font-size: 2.5em; }
+  .mainContacto .mapaContacto .mapaGrande {
+    margin: 3rem auto; }
+    .mainContacto .mapaContacto .mapaGrande .mapaChico {
+      display: none; }
+  .mainContacto .contenedorFormulario {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-stard;
+    flex-direction: row-reverse;
+    justify-content: center;
     align-content: center;
-    gap: 1rem; }
-    .mainContacto .formulario .formularioContacto input[name="nombre"] {
-      width: 25rem; }
-    .mainContacto .formulario .formularioContacto input[name="correo"] {
-      width: 25rem; }
-    .mainContacto .formulario .formularioContacto input[name="caja-de-mensaje"] {
-      height: 20rem;
-      width: 25rem; }
+    gap: 3rem;
+    margin: 4rem auto; }
+    .mainContacto .contenedorFormulario .imagenContacto {
+      height: 40rem;
+      width: 32rem; }
+      .mainContacto .contenedorFormulario .imagenContacto img {
+        width: 100%; }
+    .mainContacto .contenedorFormulario .formulario h2 {
+      font-size: 2em;
+      color: #b40202;
+      margin: 3rem auto; }
+    .mainContacto .contenedorFormulario .formulario .formularioContacto {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-stard;
+      align-content: center;
+      gap: 1rem; }
+      .mainContacto .contenedorFormulario .formulario .formularioContacto input[name="nombre"] {
+        width: 25rem; }
+      .mainContacto .contenedorFormulario .formulario .formularioContacto input[name="correo"] {
+        width: 25rem; }
+      .mainContacto .contenedorFormulario .formulario .formularioContacto input[name="caja-de-mensaje"] {
+        height: 20rem;
+        width: 25rem; }
 
 footer {
   background-image: url(../EAE_img/cebollasfondo.jpg);
@@ -388,3 +436,53 @@ footer {
     width: 20em;
     height: 10em;
     margin: 2rem; }
+
+@media screen and (max-width: 600px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em; } }
+
+@media screen and (max-width: 600px) {
+  .mainHome .presentacionServicios {
+    display: flex;
+    flex-direction: column; }
+  .mainHome .clientes .logoClientes {
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-template-rows: repeat(4, 1fr); }
+    .mainHome .clientes .logoClientes picture img {
+      height: 5.5rem;
+      width: 6.5rem;
+      margin: 2rem; } }
+
+@media screen and (max-width: 600px) {
+  .mainServicios .servicioTramites, .mainServicios .servicioConsultorias, .mainServicios .servicioCapacitaciones, .mainServicios .otrosServicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 0; } }
+
+@media screen and (max-width: 600px) {
+  #carouselExampleDark {
+    height: 20rem;
+    width: 30rem;
+    margin: 5rem auto; }
+    #carouselExampleDark .carousel-item img {
+      height: 20rem;
+      width: 30rem; }
+    #carouselExampleDark .carousel-inner img {
+      height: 20rem;
+      width: 30rem; } }
+
+@media screen and (max-width: 600px) {
+  .mainContacto .mapaContacto .mapaGrande {
+    display: none;
+    margin: 3rem auto; }
+  .mainContacto .contenedorFormulario {
+    display: flex;
+    flex-direction: column-reverse; }
+    .mainContacto .contenedorFormulario .imagenContacto {
+      height: 40rem;
+      width: 25rem; } }

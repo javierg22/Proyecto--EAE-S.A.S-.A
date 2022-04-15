@@ -19,8 +19,23 @@
         min-height: 100vh;
         grid-template-columns: repeat(4,1fr);
        grid-template-rows: auto 1fr auto;
-
+    }
+// telefono
+    @media screen and(max-width:320px) {
+        nav{
+            flex-direction: column;
+        }
+    }
+    @media screen and(max-width:480px) {
         
-       
+    }
+    // tablets
+    @media screen and(max-width:600px) {
+       nav{ flex-direction: column;
+       }
+        
+    }
+    @media screen and(max-width:1023px) {
+        
     }
 }

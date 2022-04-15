@@ -1,22 +1,32 @@
 .mainContacto{
     grid-column: 1/5;
     grid-row: 2;
-    display: grid;
-    grid-template-areas: "mapa mapa""formulario imagenContacto";
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: $terciario;
+    h2{
+      display: inline;
+      color: $color_titulos;
+      font-size: $subtitulos;
+    }
 
    .mapaContacto{
-     grid-area: mapa;
-     @include flex(row,flex-stard,center);
-   }
+     .mapaGrande{
+     margin: 3rem auto;
+     .mapaChico{
+       display: none;
+     }
+    }
+ }
+  .contenedorFormulario{
+    @include flex(row-reverse,center,center,3rem);
+    margin: 4rem auto;
+
 
    .imagenContacto{
      @include size(40rem,32rem);
-   
-    grid-area: imagenContacto;
-    margin: 2rem 4rem;
         
      img{
           width: 100%;
@@ -26,12 +36,10 @@
         h2{
           font-size: 2em;
           color: rgba(180,2,2,255);
-          margin-bottom: 2rem;
-          margin-top: 2rem;
+         margin: 3rem auto;
         }
    
        .formularioContacto{
-           grid-area: formulario;
            @include flex(column,flex-stard,center,1rem);
         
 
@@ -49,4 +57,5 @@
          
         }
     }
+}
 }

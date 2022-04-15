@@ -4,23 +4,23 @@
     grid-column: 1/5;
     grid-row: 2;
     background-color: $terciario;
-   
 
-    h1{
+    h2{
         font-size: $titulos;
         color: $color_titulos;
-        @include flex(row,flex-stard,center);
+        @include flex(row,center,center);
+        margin: 3rem auto;
        
     }
     #carouselExampleFade{
-        @include size(40rem,60rem);
+        @include flex(row,center,center);
+        @include size(40rem,100%);
         margin: 10rem auto ;
-        @include flex(row,flex-stard,center);
         
         
        
-        .carousel-item img{
-            @include size(40rem,60rem);
+        .carousel-item img,.carousel-inner img{
+            @include size(40rem,100%);
            
         }
 
