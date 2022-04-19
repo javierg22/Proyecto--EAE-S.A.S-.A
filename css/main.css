@@ -2,26 +2,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
-  * html {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 62.5%; }
-  * ul {
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%; }
+  html ul {
     list-style-type: none; }
-  * a {
+  html a {
     text-decoration: none;
     color: black;
     display: inline-block; }
-  * body {
+  html body {
     display: grid;
     min-height: 100vh;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto 1fr auto; }
-  @media screen and (max-width: 320px) {
-    * nav {
-      flex-direction: column; } }
-  @media screen and (max-width: 600px) {
-    * nav {
-      flex-direction: column; } }
+
+@media screen and (max-width: 320px) {
+  nav {
+    flex-direction: column; } }
+
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column; } }
 
 .escala-titulos {
   font-size: 3em; }
@@ -41,7 +44,7 @@ header {
   grid-column: 1/5;
   grid-row: 1;
   min-height: 15vh;
-  max-width: 100%;
+  max-width: 90%;
   margin: 0 auto; }
   header .nombreLema {
     display: flex;
@@ -247,6 +250,8 @@ header {
   justify-content: space-between;
   align-content: flex-start;
   gap: 0; }
+  .mainServicios div ul {
+    list-style: inside; }
   .mainServicios h2 {
     height: 30rem;
     width: 100%;
@@ -437,13 +442,16 @@ footer {
     height: 10em;
     margin: 2rem; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   header nav {
     display: flex;
     flex-direction: column;
-    font-size: 0.8em; } }
+    font-size: 0.8em;
+    margin: 0 auto; }
+    header nav ul {
+      margin: 0 auto; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .mainHome .presentacionServicios {
     display: flex;
     flex-direction: column; }
@@ -456,15 +464,15 @@ footer {
       width: 6.5rem;
       margin: 2rem; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .mainServicios .servicioTramites, .mainServicios .servicioConsultorias, .mainServicios .servicioCapacitaciones, .mainServicios .otrosServicios {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    gap: 0; } }
+    gap: 2rem; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   #carouselExampleDark {
     height: 20rem;
     width: 30rem;
@@ -476,7 +484,7 @@ footer {
       height: 20rem;
       width: 30rem; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   #carouselExampleFade {
     display: flex;
     flex-direction: row;
@@ -490,7 +498,7 @@ footer {
       height: 40rem;
       width: 100%; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .mainContacto .mapaContacto .mapaGrande {
     display: none; }
   .mainContacto .mapaContacto .mapaChico {

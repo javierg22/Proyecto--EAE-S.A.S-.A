@@ -4,6 +4,9 @@
         background-color: $terciario;
         position: relative;
         @include flex (column,space-between);
+        div ul{
+            list-style: inside;
+        }
         
        
         h2 {

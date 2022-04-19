@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
     html{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 62.5%;
-    }
+    
     ul{
         list-style-type: none;
     }
@@ -20,6 +21,7 @@
         grid-template-columns: repeat(4,1fr);
        grid-template-rows: auto 1fr auto;
     }
+}
 // telefono
     @media screen and(max-width:320px) {
         nav{
@@ -32,7 +34,7 @@
     // tablets
     @media screen and(max-width:600px) {
        nav{ flex-direction: column;
-       }
+        
         
     }
     @media screen and(max-width:1023px) {
