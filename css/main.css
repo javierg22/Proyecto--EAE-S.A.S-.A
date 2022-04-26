@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -40,30 +41,25 @@ html {
 
 header {
   background-color: white;
-  /*grid-area: header;*/
   grid-column: 1/5;
   grid-row: 1;
   min-height: 15vh;
   max-width: 90%;
   margin: 0 auto; }
-  header .nombreLema {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; }
   header h1 {
     font-weight: bold;
     font-size: x-large;
     position: relative;
     width: 21em;
-    height: 2em;
-    margin: 0.2rem; }
-  header h2 {
+    height: 1em;
+    margin: 1rem; }
+  header p {
     font-weight: bold;
     font-size: medium;
     position: relative;
     width: 21em;
     height: 3em;
-    margin: 0.2rem; }
+    margin: 1rem; }
   header nav {
     background-color: white;
     display: flex;
@@ -72,8 +68,6 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 0 2rem; }
-    header nav picture {
-      flex-basis: 35%; }
     header nav ul {
       flex-basis: 40%;
       display: flex;
@@ -87,29 +81,78 @@ header {
         padding: 1rem 1rem;
         text-align: center; }
       header nav ul li:hover {
-        border: 0.1rem solid #70ad46; }
+        border: 0.1rem solid #70ad46;
+        border-radius: 0.1rem; }
         header nav ul li:hover a {
           text-decoration: none;
           color: black; }
+
+footer {
+  background-image: url(../EAE_img/cebollasfondo.jpg);
+  grid-row: 3;
+  grid-column: 1/5;
+  display: flex;
+  flex-direction: column;
+  justify-content: 4rem;
+  align-content: flex-start;
+  gap: 0; }
+  footer p {
+    font-size: 1.4em; }
+  footer h3 {
+    font-size: 2.5em; }
+  footer .principalFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    gap: 3rem; }
+    footer .principalFooter .footerContacto {
+      align-self: center; }
+      footer .principalFooter .footerContacto p {
+        font-size: 2em; }
+    footer .principalFooter .footerCompañia {
+      height: 25rem;
+      width: 30rem;
+      align-self: center; }
+  footer .pieFooter {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-content: flex-start;
+    gap: 0; }
+    footer .pieFooter .redes {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-content: center;
+      gap: 1rem;
+      height: 4rem;
+      width: 14.5rem; }
+      footer .pieFooter .redes a {
+        height: 2rem;
+        width: 4rem; }
+        footer .pieFooter .redes a img {
+          max-width: 100%; }
 
 .mainHome {
   grid-column: 1/5;
   grid-row: 2;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.4fr 0.4fr 1fr 0.4fr;
+  grid-template-rows: auto 0.4fr 1.5fr 0.4fr;
   background-color: #F4FCED; }
   .mainHome h2 {
-    margin: 3rem 0 3rem 0;
+    margin: 3rem;
     text-align: center;
     font-size: 2.5em;
     color: #b40202; }
   .mainHome .imagenHome {
     grid-row: 1;
     grid-column: 1/3;
-    background-image: url(../EAE_img/equipo_campo1.jpeg);
+    background-image: url(../EAE_img/campo_papa_grande.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     height: 30rem;
     width: 100%;
@@ -122,22 +165,53 @@ header {
   .mainHome .presentacionEmpresa {
     grid-column: 1/3;
     grid-row: 2;
-    text-align: center;
-    margin: 1rem 2rem;
-    font-size: 2em; }
+    text-align: center; }
+    .mainHome .presentacionEmpresa .contenedorPresentacion {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      gap: 4rem; }
+      .mainHome .presentacionEmpresa .contenedorPresentacion picture img {
+        height: 45rem;
+        width: 35rem; }
+    .mainHome .presentacionEmpresa div ul {
+      list-style: square;
+      text-align: start;
+      height: 6rem;
+      width: 34rem;
+      font-size: 1.5em; }
+    .mainHome .presentacionEmpresa h2 {
+      margin: 8rem;
+      text-align: center;
+      font-size: 3em;
+      color: #b40202; }
+    .mainHome .presentacionEmpresa div h2 {
+      margin: 5rem;
+      text-align: center;
+      font-size: 3em;
+      color: #b40202; }
+    .mainHome .presentacionEmpresa p {
+      font-size: 2em;
+      text-align: start; }
   .mainHome .presentacionServicios {
     grid-column: 1/3;
     grid-row: 3;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    margin: 4rem 4rem; }
+    grid-template-rows: repeat(4, 1fr); }
     .mainHome .presentacionServicios h2 {
       grid-row: 1;
       grid-column: 1/3;
       display: flex;
       justify-content: center;
       font-size: 3em; }
+    .mainHome .presentacionServicios p {
+      font-size: 2em;
+      text-align: start; }
+    .mainHome .presentacionServicios h3 {
+      color: #b40202;
+      font-size: 2.5em; }
     .mainHome .presentacionServicios .tramitesHome {
       grid-row: 2;
       grid-column: 1/2;
@@ -145,14 +219,18 @@ header {
       flex-direction: row-reverse;
       justify-content: flex-stard;
       align-content: center;
-      gap: 0; }
-      .mainHome .presentacionServicios .tramitesHome h3 {
-        color: #b40202; }
+      gap: 1rem; }
+      .mainHome .presentacionServicios .tramitesHome div {
+        padding: 2rem 2rem;
+        flex-basis: 50%; }
       .mainHome .presentacionServicios .tramitesHome picture {
         height: 20rem;
-        width: 20rem; }
+        width: 20rem;
+        flex-basis: 50%; }
         .mainHome .presentacionServicios .tramitesHome picture img {
-          width: 90%; }
+          height: 20rem;
+          width: 20rem;
+          max-width: 100%; }
     .mainHome .presentacionServicios .consultoriaHome {
       grid-row: 2;
       grid-column: 2/3;
@@ -160,14 +238,18 @@ header {
       flex-direction: row-reverse;
       justify-content: flex-stard;
       align-content: center;
-      gap: 0; }
-      .mainHome .presentacionServicios .consultoriaHome h3 {
-        color: #b40202; }
+      gap: 1rem; }
+      .mainHome .presentacionServicios .consultoriaHome div {
+        padding: 2rem 2rem;
+        flex-basis: 50%; }
       .mainHome .presentacionServicios .consultoriaHome picture {
         height: 20rem;
-        width: 20rem; }
+        width: 20rem;
+        flex-basis: 50%; }
         .mainHome .presentacionServicios .consultoriaHome picture img {
-          width: 90%; }
+          height: 20rem;
+          width: 20rem;
+          max-width: 90%; }
     .mainHome .presentacionServicios .registroHome {
       grid-row: 3;
       grid-column: 1/2;
@@ -175,14 +257,18 @@ header {
       flex-direction: row-reverse;
       justify-content: flex-stard;
       align-content: center;
-      gap: 0; }
-      .mainHome .presentacionServicios .registroHome h3 {
-        color: #b40202; }
+      gap: 1rem; }
+      .mainHome .presentacionServicios .registroHome div {
+        padding: 2rem 2rem;
+        flex-basis: 50%; }
       .mainHome .presentacionServicios .registroHome picture {
         height: 20rem;
-        width: 20rem; }
+        width: 20rem;
+        flex-basis: 50%; }
         .mainHome .presentacionServicios .registroHome picture img {
-          width: 90%; }
+          height: 20rem;
+          width: 20rem;
+          max-width: 90%; }
     .mainHome .presentacionServicios .capacitacionesHome {
       grid-row: 3;
       grid-column: 2/3;
@@ -190,14 +276,18 @@ header {
       flex-direction: row-reverse;
       justify-content: flex-stard;
       align-content: center;
-      gap: 0; }
-      .mainHome .presentacionServicios .capacitacionesHome h3 {
-        color: #b40202; }
+      gap: 1rem; }
+      .mainHome .presentacionServicios .capacitacionesHome div {
+        padding: 2rem 2rem;
+        flex-basis: 50%; }
       .mainHome .presentacionServicios .capacitacionesHome picture {
         height: 20rem;
-        width: 20rem; }
+        width: 20rem;
+        flex-basis: 50%; }
         .mainHome .presentacionServicios .capacitacionesHome picture img {
-          width: 90%; }
+          height: 20rem;
+          width: 20rem;
+          max-width: 90%; }
     .mainHome .presentacionServicios .otrosHome {
       grid-row: 4;
       grid-column: 1/2;
@@ -205,20 +295,33 @@ header {
       flex-direction: row-reverse;
       justify-content: flex-stard;
       align-content: center;
-      gap: 0; }
-      .mainHome .presentacionServicios .otrosHome h3 {
-        color: #b40202; }
+      gap: 1rem; }
+      .mainHome .presentacionServicios .otrosHome div {
+        padding: 2rem 2rem;
+        flex-basis: 50%; }
       .mainHome .presentacionServicios .otrosHome picture {
         height: 20rem;
-        width: 20rem; }
+        width: 20rem;
+        flex-basis: 50%; }
         .mainHome .presentacionServicios .otrosHome picture img {
-          width: 90%; }
+          height: 20rem;
+          width: 20rem;
+          max-width: 90%; }
     .mainHome .presentacionServicios .botonCotizacion {
       grid-row: 4;
       grid-column: 2/3;
       display: flex;
       justify-content: center;
       align-items: center; }
+      .mainHome .presentacionServicios .botonCotizacion a input {
+        height: 4.5rem;
+        width: 20rem;
+        border-radius: 1rem;
+        background-color: #70AD46;
+        font-size: 2em;
+        box-shadow: 1rem 1rem 1rem lightslategray; }
+    .mainHome .presentacionServicios .bordeSeparacion {
+      grid-column: 1/3; }
   .mainHome .clientes {
     grid-column: 1/3;
     grid-row: 4;
@@ -247,60 +350,46 @@ header {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-content: flex-start;
-  gap: 0; }
-  .mainServicios div ul {
-    list-style: inside; }
-  .mainServicios h2 {
-    height: 30rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
-    font-weight: bold;
-    text-align: center;
-    color: #b40202;
-    background-image: url(../EAE_img/cultivo_rosas_blancas.jpeg);
+  justify-content: start;
+  align-content: center;
+  gap: 5rem; }
+  .mainServicios .imagenServicios {
+    background-image: url(../EAE_img/cultivo_maracuya.jpg);
     background-position: center;
-    background-repeat: no-repeat; }
-  .mainServicios h3 {
-    font-size: 2.5em;
-    color: #b40202; }
-  .mainServicios picture {
-    height: 20em;
-    width: 30em; }
-    .mainServicios picture img {
-      width: 90%; }
-  .mainServicios .servicioTramites {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    gap: 0;
-    margin: 2rem 3rem auto; }
-  .mainServicios .servicioConsultorias {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-stard;
-    align-content: center;
-    gap: 0;
-    margin: 2rem 3rem auto; }
-  .mainServicios .servicioCapacitaciones {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-stard;
-    align-content: center;
-    gap: 0;
-    margin: 2rem 3rem auto; }
-  .mainServicios .otrosServicios {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-stard;
-    align-content: center;
-    gap: 0;
-    margin: 2rem 3rem auto; }
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
+    .mainServicios .imagenServicios h2 {
+      height: 30rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3em;
+      font-weight: bold;
+      text-align: center;
+      color: #b40202; }
+  .mainServicios .accordion {
+    margin-bottom: 5rem;
+    margin-top: 5rem; }
+    .mainServicios .accordion .accordion-item, .mainServicios .accordion .accordion-button {
+      background-color: transparent;
+      color: black; }
+    .mainServicios .accordion div ul {
+      list-style: inside; }
+    .mainServicios .accordion .accordion-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: start;
+      gap: 3rem; }
+      .mainServicios .accordion .accordion-body picture {
+        display: flex;
+        justify-content: center; }
+        .mainServicios .accordion .accordion-body picture img {
+          max-width: 100%;
+          height: 30rem;
+          width: 65rem;
+          justify-content: center; }
 
 .mainNosotros {
   grid-column: 1/5;
@@ -312,28 +401,45 @@ header {
   .mainNosotros .imagenNosotros {
     grid-row: 1;
     grid-column: 1;
-    background-image: url(../EAE_img/cultivo_rosas.jpeg);
-    background-position: center;
+    background-image: url(../EAE_img/herbicida.jpg);
     background-repeat: no-repeat;
-    display: flex;
-    height: 30rem;
-    width: 100%;
-    justify-content: center;
-    align-items: center; }
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; }
     .mainNosotros .imagenNosotros h2 {
+      height: 30rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-size: 3em;
-      color: #b40202;
-      text-align: center; }
+      font-weight: bold;
+      text-align: center;
+      color: #b40202; }
   .mainNosotros .introduccionEquipo {
     grid-row: 2;
-    grid-column: 1; }
+    grid-column: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    gap: 4rem; }
+    .mainNosotros .introduccionEquipo div {
+      height: auto;
+      width: 40rem; }
+    .mainNosotros .introduccionEquipo .preguntaEquipo {
+      height: auto;
+      width: 22rem; }
+    .mainNosotros .introduccionEquipo ul {
+      list-style: inherit; }
+      .mainNosotros .introduccionEquipo ul li {
+        font-size: 1.4em; }
+    .mainNosotros .introduccionEquipo h2 {
+      font-size: 2.5em;
+      color: #b40202; }
     .mainNosotros .introduccionEquipo p {
-      text-align: center;
       font-family: 'Times New Roman', Times, serif;
-      margin: 3rem auto;
-      font-size: 2em;
-      height: 20rem;
-      width: 100%; }
+      font-size: 2em; }
   .mainNosotros #carouselExampleDark {
     grid-row: 3;
     grid-column: 1;
@@ -415,6 +521,15 @@ header {
       justify-content: flex-stard;
       align-content: center;
       gap: 1rem; }
+      .mainContacto .contenedorFormulario .formulario .formularioContacto div {
+        justify-content: space-around; }
+      .mainContacto .contenedorFormulario .formulario .formularioContacto button {
+        height: 3.5rem;
+        width: 8rem;
+        border-radius: 1rem;
+        background-color: #70AD46;
+        font-size: 1.5em;
+        box-shadow: 1rem 1rem 1rem lightslategray; }
       .mainContacto .contenedorFormulario .formulario .formularioContacto input[name="nombre"] {
         width: 25rem; }
       .mainContacto .contenedorFormulario .formulario .formularioContacto input[name="correo"] {
@@ -423,38 +538,40 @@ header {
         height: 20rem;
         width: 25rem; }
 
-footer {
-  background-image: url(../EAE_img/cebollasfondo.jpg);
-  grid-row: 3;
-  grid-column: 1/5;
-  margin: 0px;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around; }
-  footer a {
-    position: relative;
-    margin: 2rem; }
-  footer h3 {
-    position: relative;
-    margin: 2rem; }
-  footer p {
-    width: 20em;
-    height: 10em;
-    margin: 2rem; }
-
 @media screen and (max-width: 768px) {
-  header nav {
+  header nav .contenedor {
     display: flex;
     flex-direction: column;
-    font-size: 0.8em;
-    margin: 0 auto; }
-    header nav ul {
-      margin: 0 auto; } }
+    justify-content: center;
+    font-size: 50%; }
+    header nav .contenedor ul {
+      margin: 0 auto; }
+    header nav .contenedor .nombreLema h1, header nav .contenedor p {
+      width: 100%;
+      margin-bottom: 4rem; } }
 
 @media screen and (max-width: 768px) {
+  .principalFooter {
+    font-size: 0.6em; } }
+
+@media screen and (max-width: 768px) {
+  .mainHome .presentacionEmpresa .contenedorPresentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem; }
   .mainHome .presentacionServicios {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    gap: 3rem; }
+    .mainHome .presentacionServicios .tramitesHome, .mainHome .presentacionServicios .consultoriaHome, .mainHome .presentacionServicios .registroHome, .mainHome .presentacionServicios .capacitacionesHome, .mainHome .presentacionServicios .otrosHome {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-content: center;
+      gap: 1rem;
+      justify-items: center; }
   .mainHome .clientes .logoClientes {
     display: grid;
     grid-template-columns: repeat(3, 0.5fr);
@@ -473,14 +590,23 @@ footer {
     gap: 2rem; } }
 
 @media screen and (max-width: 768px) {
-  #carouselExampleDark {
+  .mainNosotros .introduccionEquipo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 1.5rem; }
+    .mainNosotros .introduccionEquipo div {
+      height: auto;
+      width: auto; }
+  .mainNosotros #carouselExampleDark {
     height: 20rem;
     width: 30rem;
     margin: 5rem auto; }
-    #carouselExampleDark .carousel-item img {
+    .mainNosotros #carouselExampleDark .carousel-item img {
       height: 20rem;
       width: 30rem; }
-    #carouselExampleDark .carousel-inner img {
+    .mainNosotros #carouselExampleDark .carousel-inner img {
       height: 20rem;
       width: 30rem; } }
 

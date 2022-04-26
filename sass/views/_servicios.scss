@@ -3,12 +3,16 @@
         grid-row: 2;
         background-color: $terciario;
         position: relative;
-        @include flex (column,space-between);
-        div ul{
-            list-style: inside;
-        }
-        
+        @include flex(column,start,center,5rem);
        
+       
+        
+       .imagenServicios{
+        background-image: url(../EAE_img/cultivo_maracuya.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+           
         h2 {
             @include size(30rem,100%);
             display: flex;
@@ -18,47 +22,43 @@
             font-weight: bold;
             text-align: center;
             color: $color_titulos;
-            background-image: url(../EAE_img/cultivo_rosas_blancas.jpeg);
-            background-position: center;
-            background-repeat: no-repeat;
             
 
              }
-        h3{
-             font-size: $subtitulos;
-             color: $color_titulos
             }
+       
         
        
         
-         picture{
-             @include size(20em,30em);
-               
-                
-                img{
-                    width: 90%;
-                }
+         .accordion {
+             margin-bottom: 5rem;
+             margin-top: 5rem;
+        .accordion-item, .accordion-button {
+
+         background-color: transparent;
+         color: black;
+        }
+
+         div ul{
+            list-style: inside;
+        }
                
 
-            }
-         .servicioTramites{
-             @include flex(row,center,center);
-             margin: 2rem 3rem auto;
-            
+           
+         .accordion-body{
+             @include flex(column,center,start,3rem);
+             picture{
+                 display: flex;
+                 justify-content: center;
+                 
+                 img{
+                     max-width: 100%;
+                     @include size (30rem,65rem);
+                     justify-content: center;
+                     
+                 }
+                 
              }
-
-         .servicioConsultorias{
-            @include flex(row-reverse,flex-stard,center);
-            margin: 2rem 3rem auto;
-            
-             } 
-         .servicioCapacitaciones{
-            @include flex(row,flex-stard,center);
-            margin: 2rem 3rem auto;
-             } 
-         .otrosServicios{
-            @include flex(row-reverse,flex-stard,center);
-            margin: 2rem 3rem auto;
-             }     
+         }   
    }
-   
+}

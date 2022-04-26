@@ -13,35 +13,64 @@
 </head>
 <body>
     <header>
-        <nav> 
-
-        <picture>
-            <img src="./EAE_img/Logo_EAE_SAS_centro.jpg" alt="logo EAE S.A.S"class="logo">
-        </picture>
-        <article class="nombreLema">
-    <h1>
-        Especialidades Agrícolas Ecológicas S.A.S.
-    </h1>
-       <h2> Brindando Soluciones y Bienestar al Sector Agrícola</h2>
-    </article>
-
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href ="./servicios.html">Servicios</a></li>
-                <li><a href ="./nosotros.html">Nosotros</a></li>
-                <li><a href="./galeria.html">Galeria</a></li>
-                <li><a href="./contacto.html">Contacto </a></li>
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="contenedor container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./EAE_img/Logo_EAE_SAS_centro.jpg" alt="logo EAE" width="190" height="160" class="d-inline-block align-text-center"></a>
+                <div class="nombreLema d-flex flex-column bd-highlight">
+                <h1> Especialidades Agrícolas Ecológicas S.A.S.</h1>
+                <p >Brindando Soluciones y Bienestar al Sector Agrícola</p>
+                </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./galeria.html">Galeria</a>
+              </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
     <br>
     <main class="mainNosotros">
         <article class="imagenNosotros">
         <h2>Nuestro Equipo</h2>
        </article>
-    <article class="introduccionEquipo" data-aos="zoom-in-up">
+    <div class="introduccionEquipo container" data-aos="zoom-in-up"data-aos-duration="1000">
+      <div class="preguntaEquipo flex-column">
+        <h2>Sobre Nosotros</h2>
+        <p>Quienes somos en E.A.E?</p>
+      </div>
+      <div>
         <p>En Especialidades Agrícolas Ecológicas S.A.S. hemos reunido un grupo de consultores con experiencia en diversos ámbitos. Nuestro compromiso es responder ante desafíos complejos utilizando nuestro enfoque estratégico creativo y colaborativo.</p>
-    </article>
+      </div>
+      <div>
+        <p>Nuestro equipo multidisciplinario cuenta con:</p>
+          <ul>
+            <li>2 Especialistas dedicados a Evaluacion de Riesgo Ambiental y PMA. </li>
+            <li>1 Ingeniera Quimica MSC Ambiental.</li>
+            <li>2 Especialistas dedicados a Evaluacion de Riesgo Toxicoligico.</li>
+            <li>12 Ingenieros Agronomos registrados ante ICA Colombia-Pruebas de eficacia oficiales.</li>
+            <li>1 Consultor con Departamento Tecnico y Registro en Ecuador.</li>
+          </ul>
+      </div>
+    </div>
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -89,18 +118,39 @@
 
    
      <footer>
-        <div>
-            <a data-auto-recognition="true" href="mailto:especialidadesagrieco@gmail.com"><img src="./EAE_img/mail_logo.jpg" style="width: 80px;" alt="correo de EAE S.A.S"> </a><a href=""><img src="./EAE_img/instagram_logo .png"style="width: 80px;" alt="instagram de EAE S.A.S"></a><a href=""><img src="./EAE_img/WhatsApp_logo.png"style="width: 80px;" alt="WhatsApp de EAE S.A.S"></a>
-        </div>
-        <article>
-            <p>especialidadesagrieco@gmail.com<br>
-                CEL. (+57) 3125236412<br>
-                CEL. (+57) 3118732669<br>
-                Bogotá D.C. - Colombia
-                </p>
-             <h3> Hecho por Carlos Javier Gonzalez</h3>
-        </article>
-    </footer>
+      <div class="principalFooter container">
+      <article class="footerContacto">
+          <p>especialidadesagrieco@gmail.com<br>
+              CEL. (+57) 3125236412<br>
+              CEL. (+57) 3118732669<br>
+              Bogotá D.C. - Colombia
+          </p>
+      </article>
+          <article class="footerCompañia ">
+              <h3>Nuestra Compañia</h3>
+              <p>Somos EAE S.A.S., empresa
+                  dedicada al bienestar
+                  corporativo de compañias en
+                  sector del agro colombiano y
+                  mundial.</p>
+                  <p>Desde hace años los clientes
+                      se han acercado y confiado
+                      en nosotros, saben que como
+                      Empresa consultora agricola
+                      profesional estamos
+                      preparados para entregar
+                      soluciones personalizadas y a
+                      tiempo.</p>
+                  </article>
+     </div>
+     <div class="pieFooter container">
+      <div class="redes"><a data-auto-recognition="true" href="mailto:especialidadesagrieco@gmail.com"><img src="./EAE_img/mail_logo.jpg" alt="correo de EAE S.A.S"></a>
+          <a href=""><img src="./EAE_img/instagram_logo .png"style="width: 80px;" alt="instagram de EAE S.A.S"></a>
+          <a href=""><img src="./EAE_img/WhatsApp_logo.png"style="width: 80px;" alt="WhatsApp de EAE S.A.S"></a>
+      </div>
+          <h3> Hecho por Carlos Javier Gonzalez</h3>
+     </div>
+  </footer>
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

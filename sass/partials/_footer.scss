@@ -2,24 +2,48 @@ footer{
     background-image: url(../EAE_img/cebollasfondo.jpg);
     grid-row: 3;
     grid-column: 1/5;
-    margin: 0px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    a{
-        position: relative;
-        margin: 2rem;
-    }
-    h3{
-        position:relative;
-        margin: 2rem;
-    }
-    p{
-        width: 20em;
-        height: 10em;
-        margin :2rem;
-   
-    }
-  
+   @include flex(column,4rem);
+   p{
+       font-size: $subparrafo;
 
+   }
+   h3{
+       font-size: $subtitulos;
+       
+   }
+   
+   .principalFooter{
+       @include flex(row,space-between,center,3rem);
+       
+       .footerContacto{
+           align-self: center;
+           p{
+            font-size: $parrafos;
+     
+        }
+       }
+       .footerCompañia{
+           @include size(25rem,30rem);
+           align-self: center;
+          
+       }
+
+}
+.pieFooter{
+    @include flex(row-reverse,space-between);
+   
+    .redes{
+        @include flex (row,start,center,1rem);
+        @include size(4rem,14.5rem);
+
+    a {
+        @include size(2rem,4rem);
+        
+    img{
+        max-width: 100%;
+        
+    }
+}
+}
+}
 }

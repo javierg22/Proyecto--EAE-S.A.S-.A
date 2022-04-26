@@ -5,37 +5,58 @@
    grid-template-columns: 1fr;
    grid-template-rows: 0.5fr 0.4fr 1fr;
    background-color: $terciario;
-   .imagenNosotros{
-       grid-row: 1;
-       grid-column: 1;
-       background-image: url(../EAE_img/cultivo_rosas.jpeg);
-       background-position: center;
-       background-repeat: no-repeat;
-       display: flex;
-       @include size(30rem,100%);
+
+.imagenNosotros{
+    grid-row: 1;
+    grid-column: 1;
+    background-image: url(../EAE_img/herbicida.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+       
+    h2 {
+        @include size(30rem,100%);
+        display: flex;
         justify-content: center;
         align-items: center;
-     
+        font-size: $titulos;
+        font-weight: bold;
+        text-align: center;
+        color: $color_titulos;
+        
 
-       h2{
-           font-size: $titulos;
-           color: $color_titulos;
-           text-align: center;
-           
-       }
-       
-   }
+         }
+        }
     .introduccionEquipo{
         grid-row: 2;
         grid-column: 1;
+        @include flex(row,space-around,center,4rem);
+        
+        div{
+            @include size (auto,40rem);
+        }
+        .preguntaEquipo{
+            @include size (auto,22rem);
+        }
+        ul{
+            list-style: inherit;
+            li{font-size: $subparrafo;
+            }
+        }
+
+        h2{
+            font-size: $subtitulos;
+            color: $color_titulos;
+        }
         p{
-            text-align: center;
             font-family: 'Times New Roman', Times, serif;
-            margin: 3rem auto;
             font-size: $parrafos;
-            @include size(20rem,100%);
        
         }
+
+
         
     }
     #carouselExampleDark{

@@ -42,6 +42,16 @@
    
        .formularioContacto{
            @include flex(column,flex-stard,center,1rem);
+           div{
+             justify-content: space-around
+           }
+           button{
+            @include size( 3.5rem,8rem);
+            border-radius: 1rem;
+            background-color: #70AD46;
+            font-size: 1.5em;
+            box-shadow: 1rem 1rem 1rem lightslategray;
+           }
         
 
           input[name="nombre"]{
