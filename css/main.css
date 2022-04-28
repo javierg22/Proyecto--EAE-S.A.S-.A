@@ -88,14 +88,17 @@ header {
           color: black; }
 
 footer {
-  background-image: url(../EAE_img/cebollasfondo.jpg);
+  background-image: url(../EAE_img/caficultor.jpg);
+  background-position: center;
+  background-size: cover;
   grid-row: 3;
   grid-column: 1/5;
   display: flex;
   flex-direction: column;
   justify-content: 4rem;
   align-content: flex-start;
-  gap: 0; }
+  gap: 0;
+  color: #F4FCED; }
   footer p {
     font-size: 1.4em; }
   footer h3 {
@@ -107,16 +110,16 @@ footer {
     align-content: center;
     gap: 3rem; }
     footer .principalFooter .footerContacto {
-      align-self: center; }
+      align-self: end; }
       footer .principalFooter .footerContacto p {
         font-size: 2em; }
     footer .principalFooter .footerCompañia {
       height: 25rem;
       width: 30rem;
-      align-self: center; }
+      align-self: end; }
   footer .pieFooter {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
     align-content: flex-start;
     gap: 0; }
@@ -149,8 +152,7 @@ footer {
   .mainHome .imagenHome {
     grid-row: 1;
     grid-column: 1/3;
-    background-image: url(../EAE_img/campo_papa_grande.jpg);
-    background-position: center;
+    background-image: url(../EAE_img/campo_arado.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
@@ -199,7 +201,8 @@ footer {
     grid-row: 3;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr); }
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10rem; }
     .mainHome .presentacionServicios h2 {
       grid-row: 1;
       grid-column: 1/3;
@@ -207,7 +210,7 @@ footer {
       justify-content: center;
       font-size: 3em; }
     .mainHome .presentacionServicios p {
-      font-size: 2em;
+      font-size: 1.5em;
       text-align: start; }
     .mainHome .presentacionServicios h3 {
       color: #b40202;
@@ -226,7 +229,7 @@ footer {
       .mainHome .presentacionServicios .tramitesHome picture {
         height: 20rem;
         width: 20rem;
-        flex-basis: 50%; }
+        flex-basis: 35%; }
         .mainHome .presentacionServicios .tramitesHome picture img {
           height: 20rem;
           width: 20rem;
@@ -245,7 +248,7 @@ footer {
       .mainHome .presentacionServicios .consultoriaHome picture {
         height: 20rem;
         width: 20rem;
-        flex-basis: 50%; }
+        flex-basis: 35%; }
         .mainHome .presentacionServicios .consultoriaHome picture img {
           height: 20rem;
           width: 20rem;
@@ -264,7 +267,7 @@ footer {
       .mainHome .presentacionServicios .registroHome picture {
         height: 20rem;
         width: 20rem;
-        flex-basis: 50%; }
+        flex-basis: 35%; }
         .mainHome .presentacionServicios .registroHome picture img {
           height: 20rem;
           width: 20rem;
@@ -283,7 +286,7 @@ footer {
       .mainHome .presentacionServicios .capacitacionesHome picture {
         height: 20rem;
         width: 20rem;
-        flex-basis: 50%; }
+        flex-basis: 35%; }
         .mainHome .presentacionServicios .capacitacionesHome picture img {
           height: 20rem;
           width: 20rem;
@@ -302,7 +305,7 @@ footer {
       .mainHome .presentacionServicios .otrosHome picture {
         height: 20rem;
         width: 20rem;
-        flex-basis: 50%; }
+        flex-basis: 35%; }
         .mainHome .presentacionServicios .otrosHome picture img {
           height: 20rem;
           width: 20rem;
@@ -423,7 +426,8 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
-    gap: 4rem; }
+    gap: 4rem;
+    margin-top: 10rem; }
     .mainNosotros .introduccionEquipo div {
       height: auto;
       width: 40rem; }
@@ -443,15 +447,15 @@ footer {
   .mainNosotros #carouselExampleDark {
     grid-row: 3;
     grid-column: 1;
-    height: 40rem;
-    width: 80%;
+    height: 60rem;
+    width: 80rem;
     margin: 10rem auto; }
     .mainNosotros #carouselExampleDark .carousel-item img {
-      height: 40rem;
-      width: 60rem; }
+      height: 60rem;
+      width: 100rem; }
     .mainNosotros #carouselExampleDark .carousel-inner img {
-      height: 40rem;
-      width: 60rem; }
+      height: 60rem;
+      width: 100rem; }
     .mainNosotros #carouselExampleDark .carousel-caption {
       color: white; }
 
@@ -470,18 +474,39 @@ footer {
     align-content: center;
     gap: 0;
     margin: 3rem auto; }
-  .mainGaleria #carouselExampleFade {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    gap: 0;
-    height: 40rem;
-    width: 80%;
-    margin: 10rem auto; }
-    .mainGaleria #carouselExampleFade .carousel-item img, .mainGaleria #carouselExampleFade .carousel-inner img {
-      height: 40rem;
-      width: 80%; }
+  .mainGaleria .galeria {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 0.5fr);
+    grid-template-areas: "img1 img2 img3 img3" "img1 img2 img3 img3" "img4 img5 img5 img5" "img4 img6 img7 img8" "img9 img9 img10 img8"; }
+    .mainGaleria .galeria .img1 {
+      grid-area: img1; }
+    .mainGaleria .galeria .img2 {
+      grid-area: img2; }
+    .mainGaleria .galeria .img3 {
+      grid-area: img3; }
+    .mainGaleria .galeria .img4 {
+      grid-area: img4; }
+    .mainGaleria .galeria .img5 {
+      grid-area: img5; }
+    .mainGaleria .galeria .img6 {
+      grid-area: img6; }
+    .mainGaleria .galeria .img7 {
+      grid-area: img7; }
+    .mainGaleria .galeria .img8 {
+      grid-area: img8; }
+    .mainGaleria .galeria .img9 {
+      grid-area: img9; }
+    .mainGaleria .galeria .img10 {
+      grid-area: img10; }
+    .mainGaleria .galeria img {
+      height: 100%;
+      width: 100%; }
+    .mainGaleria .galeria picture:hover {
+      filter: opacity(90%);
+      transition: filter .5s; }
 
 .mainContacto {
   grid-column: 1/5;
@@ -552,7 +577,9 @@ footer {
 
 @media screen and (max-width: 768px) {
   .principalFooter {
-    font-size: 0.6em; } }
+    font-size: 0.6em; }
+    .principalFooter .pieFooter {
+      font-size: 0.6em; } }
 
 @media screen and (max-width: 768px) {
   .mainHome .presentacionEmpresa .contenedorPresentacion {

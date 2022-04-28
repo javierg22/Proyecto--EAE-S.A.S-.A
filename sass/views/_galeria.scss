@@ -13,19 +13,56 @@
         margin: 3rem auto;
        
     }
-    #carouselExampleFade{
-        @include flex(row,center,center);
-        @include size(40rem,80%);
-        margin: 10rem auto ;
+    .galeria{
+        display: grid;
+        gap: 1rem;
+        margin-bottom: 3rem;
+
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(5,0.5fr);
+        grid-template-areas: 
+        "img1 img2 img3 img3"
+        "img1 img2 img3 img3"
+        "img4 img5 img5 img5"
+        "img4 img6 img7 img8"
+        "img9 img9 img10 img8";
+        
+            .img1{grid-area: img1;}
+            .img2{grid-area: img2;}
+            .img3{grid-area: img3;}
+            .img4{grid-area: img4;}
+            .img5{grid-area: img5;}
+            .img6{grid-area: img6;}
+            .img7{grid-area: img7;}
+            .img8{grid-area: img8;}
+            .img9{grid-area: img9;}
+            .img10{grid-area: img10;}
+        
+        img{
+            @include size(100%,100%);
+            
+        }
+        picture:hover{
+            
+            filter: opacity(90%);
+            transition: filter .5s;
+        
+        }
+    }
+
+    // #carouselExampleFade{
+    //     @include flex(row,center,center);
+    //     @include size(40rem,80%);
+    //     margin: 10rem auto ;
         
         
        
-        .carousel-item img,.carousel-inner img{
-            @include size(40rem,80%);
+    //     .carousel-item img,.carousel-inner img{
+    //         @include size(40rem,80%);
            
-        }
+    //     }
 
         
-    }
+    //}
 
 }

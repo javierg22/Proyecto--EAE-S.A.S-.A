@@ -33,7 +33,7 @@
         grid-row: 2;
         grid-column: 1;
         @include flex(row,space-around,center,4rem);
-        
+        margin-top: 10rem;
         div{
             @include size (auto,40rem);
         }
@@ -62,20 +62,24 @@
     #carouselExampleDark{
         grid-row:3;
         grid-column: 1;
-        @include size(40rem,80%);
+        @include size(60rem,80rem);
         margin: 10rem auto ;
         
         
         
        
         .carousel-item img{
-            @include size(40rem,60rem);
+             @include size(60rem,100rem);
+            // object-fit: contain;
+
         }
         .carousel-inner img{
-            @include size(40rem,60rem);
+             @include size(60rem,100rem);
+            // object-fit: contain;
         }
         .carousel-caption {
             color: white;
+    
            }
 
     }

@@ -1,8 +1,11 @@
 footer{
-    background-image: url(../EAE_img/cebollasfondo.jpg);
+    background-image: url(../EAE_img/caficultor.jpg);
+     background-position:center;
+     background-size: cover;
     grid-row: 3;
     grid-column: 1/5;
    @include flex(column,4rem);
+   color:#F4FCED  ;
    p{
        font-size: $subparrafo;
 
@@ -16,7 +19,7 @@ footer{
        @include flex(row,space-between,center,3rem);
        
        .footerContacto{
-           align-self: center;
+           align-self: end;
            p{
             font-size: $parrafos;
      
@@ -24,13 +27,13 @@ footer{
        }
        .footerCompañia{
            @include size(25rem,30rem);
-           align-self: center;
+           align-self: end;
           
        }
 
 }
 .pieFooter{
-    @include flex(row-reverse,space-between);
+    @include flex(row,space-between);
    
     .redes{
         @include flex (row,start,center,1rem);
