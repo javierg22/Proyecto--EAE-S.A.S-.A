@@ -18,12 +18,16 @@
 }
 // footer
 @media screen and(max-width:768px) {
+    footer{
     .principalFooter{
         font-size: 0.6em;
-    .pieFooter{
-        font-size: 0.6em;
-      }
     }
+    .pieFooter{
+        h3{
+        font-size: 1em;
+        }
+    }
+}
 }
 //  index Home
   
@@ -71,6 +75,7 @@
     .mainNosotros{
     .introduccionEquipo{
         @include flex(column,center,center,1.5rem);
+        padding: 5rem;
         div{
             @include size (auto,auto);
         }
@@ -83,6 +88,9 @@
     }
     .carousel-inner img{
         @include size(20rem,30rem);
+    }
+    .carousel-caption{
+        font-size: inherit;
     }
 } 
 }

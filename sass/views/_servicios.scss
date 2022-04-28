@@ -33,20 +33,34 @@
          .accordion {
              margin-bottom: 5rem;
              margin-top: 5rem;
+
+             
         .accordion-item, .accordion-button {
 
          background-color: transparent;
          color: black;
+          
+        
+        }
+        .accordion-button{
+            font-size: 1em;
         }
 
          div ul{
             list-style: inside;
+            
         }
+    }
+    
                
 
            
          .accordion-body{
              @include flex(column,center,start,3rem);
+             ul li {
+                 font-size: $subparrafo;
+                 line-height: 2em;
+             }
              picture{
                  display: flex;
                  justify-content: center;
@@ -61,4 +75,3 @@
              }
          }   
    }
-}

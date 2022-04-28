@@ -3,7 +3,7 @@
     grid-row: 2;
     display: grid;
    grid-template-columns: 1fr;
-   grid-template-rows: 0.5fr 0.4fr 1fr;
+   grid-template-rows: 0.5fr 0.4fr 0.4fr;
    background-color: $terciario;
 
 .imagenNosotros{
@@ -32,7 +32,7 @@
     .introduccionEquipo{
         grid-row: 2;
         grid-column: 1;
-        @include flex(row,space-around,center,4rem);
+        @include flex(row,space-around,center,5rem);
         margin-top: 10rem;
         div{
             @include size (auto,40rem);
