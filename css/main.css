@@ -595,96 +595,92 @@ footer {
       margin-bottom: 4rem; } }
 
 @media screen and (max-width: 768px) {
-  footer .principalFooter {
-    font-size: 0.6em; }
-  footer .pieFooter h3 {
-    font-size: 1em; } }
+  footer {
+    font-size: 50%; } }
 
 @media screen and (max-width: 768px) {
-  .mainHome .presentacionEmpresa .contenedorPresentacion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    gap: 2rem; }
-  .mainHome .presentacionServicios {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem; }
-    .mainHome .presentacionServicios .tramitesHome, .mainHome .presentacionServicios .consultoriaHome, .mainHome .presentacionServicios .registroHome, .mainHome .presentacionServicios .capacitacionesHome, .mainHome .presentacionServicios .otrosHome {
+  .mainHome {
+    font-size: 55%; }
+    .mainHome .presentacionEmpresa .contenedorPresentacion {
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
       justify-content: center;
       align-content: center;
-      gap: 1rem;
-      justify-items: center; }
-      .mainHome .presentacionServicios .tramitesHome picture, .mainHome .presentacionServicios .consultoriaHome picture, .mainHome .presentacionServicios .registroHome picture, .mainHome .presentacionServicios .capacitacionesHome picture, .mainHome .presentacionServicios .otrosHome picture {
+      gap: 2rem; }
+    .mainHome .presentacionServicios {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem; }
+      .mainHome .presentacionServicios .tramitesHome, .mainHome .presentacionServicios .consultoriaHome, .mainHome .presentacionServicios .registroHome, .mainHome .presentacionServicios .capacitacionesHome, .mainHome .presentacionServicios .otrosHome {
         display: flex;
-        justify-content: end; }
-  .mainHome .clientes .logoClientes {
-    display: grid;
-    grid-template-columns: repeat(3, 0.5fr);
-    grid-template-rows: repeat(4, 1fr); }
-    .mainHome .clientes .logoClientes picture img {
-      height: 5.5rem;
-      width: 6.5rem;
-      margin: 2rem; } }
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+        gap: 1rem;
+        justify-items: center; }
+        .mainHome .presentacionServicios .tramitesHome picture, .mainHome .presentacionServicios .consultoriaHome picture, .mainHome .presentacionServicios .registroHome picture, .mainHome .presentacionServicios .capacitacionesHome picture, .mainHome .presentacionServicios .otrosHome picture {
+          display: flex;
+          justify-content: end; }
+    .mainHome .clientes .logoClientes {
+      display: grid;
+      grid-template-columns: repeat(3, 0.5fr);
+      grid-template-rows: repeat(4, 1fr); }
+      .mainHome .clientes .logoClientes picture img {
+        height: 5.5rem;
+        width: 6.5rem;
+        margin: 2rem; } }
 
 @media screen and (max-width: 768px) {
-  .mainServicios .servicioTramites, .mainServicios .servicioConsultorias, .mainServicios .servicioCapacitaciones, .mainServicios .otrosServicios {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    gap: 2rem; } }
+  .mainServicios {
+    font-size: 55%; }
+    .mainServicios .servicioTramites, .mainServicios .servicioConsultorias, .mainServicios .servicioCapacitaciones, .mainServicios .otrosServicios {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      gap: 2rem; } }
 
 @media screen and (max-width: 768px) {
-  .mainNosotros .introduccionEquipo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    gap: 1.5rem;
-    padding: 5rem; }
-    .mainNosotros .introduccionEquipo div {
-      height: auto;
-      width: auto; }
-  .mainNosotros #carouselExampleDark {
-    height: 20rem;
-    width: 30rem;
-    margin: 5rem auto; }
-    .mainNosotros #carouselExampleDark .carousel-item img {
+  .mainNosotros {
+    font-size: 55%; }
+    .mainNosotros .introduccionEquipo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      gap: 1.5rem;
+      padding: 5rem; }
+      .mainNosotros .introduccionEquipo div {
+        height: auto;
+        width: auto; }
+    .mainNosotros #carouselExampleDark {
       height: 20rem;
-      width: 30rem; }
-    .mainNosotros #carouselExampleDark .carousel-inner img {
-      height: 20rem;
-      width: 30rem; }
-    .mainNosotros #carouselExampleDark .carousel-caption {
-      font-size: inherit; } }
+      width: 30rem;
+      margin: 5rem auto; }
+      .mainNosotros #carouselExampleDark .carousel-item img {
+        height: 20rem;
+        width: 30rem; }
+      .mainNosotros #carouselExampleDark .carousel-inner img {
+        height: 20rem;
+        width: 30rem; }
+      .mainNosotros #carouselExampleDark .carousel-caption {
+        font-size: inherit; } }
 
 @media screen and (max-width: 768px) {
-  #carouselExampleFade {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    gap: 0;
-    height: 40rem;
-    width: 100%;
-    margin: 10rem auto; }
-    #carouselExampleFade .carousel-item img, #carouselExampleFade .carousel-inner img {
-      height: 40rem;
-      width: 100%; } }
+  .mainGaleria {
+    font-size: 55%; } }
 
 @media screen and (max-width: 768px) {
-  .mainContacto .mapaContacto .mapaGrande {
-    display: none; }
-  .mainContacto .mapaContacto .mapaChico {
-    display: flex;
-    margin: 3rem auto; }
-  .mainContacto .contenedorFormulario {
-    display: flex;
-    flex-direction: column-reverse; }
-    .mainContacto .contenedorFormulario .imagenContacto {
-      height: 40rem;
-      width: 25rem; } }
+  .mainContacto {
+    font-size: 55%; }
+    .mainContacto .mapaContacto .mapaGrande {
+      display: none; }
+    .mainContacto .mapaContacto .mapaChico {
+      display: flex;
+      margin: 3rem auto; }
+    .mainContacto .contenedorFormulario {
+      display: flex;
+      flex-direction: column-reverse; }
+      .mainContacto .contenedorFormulario .imagenContacto {
+        height: 40rem;
+        width: 25rem; } }

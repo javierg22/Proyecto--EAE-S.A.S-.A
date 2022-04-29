@@ -19,21 +19,16 @@
 // footer
 @media screen and(max-width:768px) {
     footer{
-    .principalFooter{
-        font-size: 0.6em;
+        font-size: 50%;
+
     }
-    .pieFooter{
-        h3{
-        font-size: 1em;
-        }
-    }
-}
 }
 //  index Home
   
 
 @media screen and(max-width: 768px) {
     .mainHome {
+        font-size: 55%;
         .presentacionEmpresa .contenedorPresentacion{
         @include flex(column,center,center,2rem);
     }
@@ -68,6 +63,7 @@
 // Servicios
 @media screen and(max-width:768px){
     .mainServicios{
+        font-size: 55%;
         .servicioTramites,.servicioConsultorias,.servicioCapacitaciones,.otrosServicios {
             @include flex(column,center,center,2rem);
             
@@ -77,6 +73,7 @@
 // Nosotros
 @media screen and(max-width:768px){
     .mainNosotros{
+        font-size: 55%;
     .introduccionEquipo{
         @include flex(column,center,center,1.5rem);
         padding: 5rem;
@@ -101,24 +98,14 @@
 }   
 // Galeria
 @media screen and(max-width:768px){
-    #carouselExampleFade{
-        @include flex(row,center,center);
-        @include size(40rem,100%);
-        margin: 10rem auto ;
-        
-        
-       
-        .carousel-item img,.carousel-inner img{
-            @include size(40rem,100%);
-           
-        }
-
-        
-    }
+   .mainGaleria{
+    font-size: 55%;
+   }
 }
 // contacto
 @media screen and(max-width:768px){
     .mainContacto{
+        font-size: 55%;
     .mapaContacto {
         .mapaGrande{
             display: none;
