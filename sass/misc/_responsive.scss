@@ -44,6 +44,10 @@
         .tramitesHome, .consultoriaHome, .registroHome, .capacitacionesHome, .otrosHome{
             @include flex(column-reverse,center,center,1rem);
             justify-items:center;
+            picture{
+                display: flex;
+                justify-content: end;
+            }
             
         }
   }

@@ -24,7 +24,8 @@
         font-size: $titulos;
         font-weight: bold;
         text-align: center;
-        color: $color_titulos;
+        color: antiquewhite;
+
         
 
          }
@@ -67,15 +68,17 @@
         
         
         
+        
        
         .carousel-item img{
              @include size(60rem,100rem);
             // object-fit: contain;
-
+            border-radius: 2rem;
         }
         .carousel-inner img{
              @include size(60rem,100rem);
             // object-fit: contain;
+            border-radius: 2rem;
         }
         .carousel-caption {
             color: white;

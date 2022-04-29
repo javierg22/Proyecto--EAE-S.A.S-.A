@@ -9,7 +9,7 @@
     h2{
       display: inline;
       color: $color_titulos;
-      font-size: $subtitulos;
+      font-size: $titulos;
     }
 
    .mapaContacto{
@@ -28,8 +28,9 @@
 
    .imagenContacto{
      @include size(40rem,32rem);
-        
+     
      img{
+       border-radius: 2rem;
           width: 100%;
        }
     }

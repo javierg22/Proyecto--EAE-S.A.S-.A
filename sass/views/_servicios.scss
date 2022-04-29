@@ -21,9 +21,7 @@
             font-size: $titulos;
             font-weight: bold;
             text-align: center;
-            color: $color_titulos;
-            
-
+            color: antiquewhite;
              }
             }
        
@@ -64,8 +62,8 @@
              picture{
                  display: flex;
                  justify-content: center;
-                 
                  img{
+                     border-radius: 2rem;
                      max-width: 100%;
                      @include size (30rem,65rem);
                      justify-content: center;

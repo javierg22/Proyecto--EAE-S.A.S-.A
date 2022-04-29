@@ -7,23 +7,23 @@
     background-color: $terciario;
     
     
-    h2{
-        margin: 3rem;
-        text-align: center;
-        font-size: $subtitulos;
-        color: $color_titulos;
-    }
     .imagenHome{
         grid-row: 1;
         grid-column: 1/3;
-        background-image: url(../EAE_img/campo_arado.jpg);
+        background-image: url(../EAE_img/campo_papa_grande.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
         display: flex;
         @include size(30rem,100%);
         justify-content: center;
         align-items: center;
-
+        
+        h2{
+            margin: 3rem;
+            text-align: center;
+            font-size: $titulos;
+            color: antiquewhite;
+        }
         p{
             color: white;
             font-size: $parrafos;
@@ -36,11 +36,13 @@
         grid-column: 1/3;
         grid-row: 2;
         text-align: center;
+      
         .contenedorPresentacion{
             @include flex(row,center,center,4rem);
 
           picture img {
                 @include size (45rem, 35rem);
+                border-radius: 2rem;
             }
         }
        
@@ -53,13 +55,13 @@
         h2{
             margin: 8rem;
             text-align: center;
-            font-size: $titulos;
+            font-size: 5em;
             color: $color_titulos;
         }
         div h2{
                 margin: 5rem;
                 text-align: center;
-                font-size: $titulos;
+                font-size: $subtitulos;
                 color: $color_titulos;
             }
         
@@ -85,6 +87,8 @@
             display: flex;
             justify-content: center;
             font-size: $titulos;
+            color: #70AD46;
+           margin-top: 4rem;
         }
         p{
             font-size: 1.5em;
@@ -109,10 +113,10 @@
                 picture{
                     @include size(20rem,20rem);
                     flex-basis: 35%;
-                
-                img{
+                    img{
+                    border-radius: 2rem;
                     @include size(20rem,20rem);
-                    max-width: 100%;
+                    max-width: 90%;
                 }
              
               }
@@ -132,8 +136,8 @@
                 picture{
                     @include size(20rem,20rem);
                     flex-basis: 35%;
-                
-                img{
+                    img{
+                    border-radius: 2rem;
                     @include size(20rem,20rem);
                     max-width: 90%;
                 }
@@ -155,8 +159,8 @@
                 picture{
                     @include size(20rem,20rem);
                     flex-basis: 35%;
-                
-                img{
+                    img{
+                    border-radius: 2rem;
                     @include size(20rem,20rem);
                     max-width: 90%;
                 }
@@ -178,8 +182,8 @@
                 picture{
                     @include size(20rem,20rem);
                     flex-basis: 35%;
-                
-                img{
+                    img{
+                    border-radius: 2rem;
                     @include size(20rem,20rem);
                     max-width: 90%;
                 }
@@ -202,8 +206,8 @@
                 picture{
                     @include size(20rem,20rem);
                     flex-basis: 35%;
-                
-                img{
+                    img{
+                    border-radius: 2rem;
                     @include size(20rem,20rem);
                     max-width: 90%;
                 }
@@ -256,7 +260,7 @@
                picture img{
                 @include size(7.5rem,10.5rem);
                     margin: 2rem;
-                    
+                    border-radius: 2rem;
                 }
             }
             
